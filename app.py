@@ -4,7 +4,12 @@ import pandas as pd
 import requests
 from nltk.stem.porter import PorterStemmer
 import re
+import nltk
 from nltk.corpus import stopwords
+
+nltk.download(
+    "stopwords"
+)
 
 params = st.query_params
 # Page config
